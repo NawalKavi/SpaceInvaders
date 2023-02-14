@@ -9,9 +9,9 @@ mainWindow = display.set_mode((width, height))
 
 # Images.
 imageDictionary = {
-"invader1": transform.scale(image.load("Invader 1.png"), (40, 40)),
-"invader2": transform.scale(image.load("Invader 2.png"), (40, 40)),
-"invader3": transform.scale(image.load("Invader 3.png"), (40, 40))
+"invader1": transform.scale(image.load("Images//Invader 1.png"), (40, 40)),
+"invader2": transform.scale(image.load("Images//Invader 2.png"), (40, 40)),
+"invader3": transform.scale(image.load("Images//Invader 3.png"), (40, 40))
 }
 
 # Invader class.
@@ -47,7 +47,7 @@ while gameRunning == True:
         # Quits the game by closing the window.
         if gameEvent.type == QUIT:
             gameRunning = False
-    # Fills the window with a specified colour (black).
+    # Fills the window with the specified colour (black).
     mainWindow.fill((0, 0, 0))
     # Draws the current invader from the 1D array.
     for currentInvader in invaderArr:
