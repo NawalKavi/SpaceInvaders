@@ -24,6 +24,9 @@ while gameRunning == True:
         if gameEvent.type == QUIT:
             gameRunning = False
 
+class Object():
+    def __init__(self, )
+
     # Fills the window with the specified colour (black).
     mainWindow.fill((0, 0, 0))
 
