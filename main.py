@@ -1,5 +1,10 @@
 # Importing library and initialising.
 from pygame import *
+import random
+ylol = random.randint(1,69)
+if ylol == 69:
+	while ylol == 69:
+		print("seggsee")
 init()
 
 # Setting up the screen.
@@ -65,8 +70,8 @@ while gameRunning == True:
 	for invaderValue in invaderArray:
 		mainWindow.blit(imageDictionary[invaderValue.invaderType], (invaderValue.AbsolutePosition[0], invaderValue.AbsolutePosition[1]))
 
-	# Runs game at 120fps.
-	time.Clock().tick(120)
+	# Game fps.
+	time.Clock().tick(144)
 
 	# Displays the output.
 	display.flip()
